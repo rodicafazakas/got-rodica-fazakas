@@ -11,8 +11,8 @@ class Personaje {
     this.estado = estado;
   }
 
-  comunicar () {
-    return "Algo"; 
+  comunicar(phrase) {
+      return phrase;
   }
 
   morir() {
@@ -20,4 +20,4 @@ class Personaje {
   }
 }
 
-export default Personaje;
+export default Personaje; 
