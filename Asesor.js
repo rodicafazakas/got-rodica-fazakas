@@ -3,7 +3,7 @@ import Personaje from "./Personaje.js";
 class Asesor extends Personaje {
   asesorado;
 
-  constructor () {
+  constructor (nombre, familia, edad, estado, asesorado) {
     super(nombre, familia, edad, estado);
     this.asesorado;
   }

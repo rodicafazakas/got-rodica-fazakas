@@ -4,7 +4,7 @@ class Escuder extends Personaje {
   master;
   gradoPelotismo;
 
-  constructor () {
+  constructor (nombre, familia, edad, estado, master, gradoPelotismo) {
     super(nombre, familia, edad, estado);
     this.master;
     this.gradoPelotismo;
