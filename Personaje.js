@@ -2,7 +2,7 @@ class Personaje {
   nombre;
   familia;
   edad;
-  estado = vivos;
+  estado = "vivo";
 
   constructor (nombre, familia, edad, estado) {
     this.nombre = nombre;

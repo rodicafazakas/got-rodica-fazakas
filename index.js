@@ -11,3 +11,9 @@ const tyrion = new Asesor("Tyrion Lannister",daenerys);
 const bronn =  new Escuder("Bronn", jaime);
 
 const personajeList = [joffrey, jaime, daenerys, tyrion, bronn];
+
+const communicationFunction = function (arg) {
+  arg.map( x => x.comunicar());
+}  
+
+communicationFunction(personajeList);
