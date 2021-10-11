@@ -5,7 +5,7 @@ class Luchador extends Personaje {
   destreza;
 
   constructor () {
-    super(nombre, familia, edad, estado);
+    super(nombre, familia, edad, estado, arma, destreza);
     this.arma;
     this.destreza;
   }
