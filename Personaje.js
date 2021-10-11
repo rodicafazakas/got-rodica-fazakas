@@ -1,22 +1,36 @@
 class Personaje {
-  nombre;
+  nombre; // public field names
   familia;
   edad;
-  estado = "vivo";
+  vivo = true;
+  fraseTipo = "Yo soy: " ;
 
-  constructor (nombre, familia, edad, estado) {
+  static serie = "Juego de Tronos";
+  static familia = {  // static -- propiedad de la clase, no de la instancia
+    ARRYN: "casa Arryn",
+    BARATHEON : "casa Baratheon",
+    TRULLY: "casa Trully",
+    TYRELL: "casa Tyrell",
+    GREYJOY: "casa Greyjoy",
+    LANNISTER: "casa Lannister",
+    TARGARYEN: "casa Targaryen",
+    STARK: "casa Stark"
+  };
+
+
+  constructor (nombre, familia, edad) {
     this.nombre = nombre;
     this.familia = familia;
     this.edad = edad;
-    this.estado = estado;
   }
 
-  comunicar(phrase) {
-      return phrase;
+  comunicar() {
+      return this.fraseTipo;
+      //return "Soy: ";
   }
 
   morir() {
-    this.estado = "dead"; 
+    this.vivo = false; 
   }
 }
 

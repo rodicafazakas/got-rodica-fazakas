@@ -1,18 +1,28 @@
 import Personaje from "./Personaje.js";
+import Luchador from "./Luchador.js";
 
 class Escuder extends Personaje {
   master;
   gradoPelotismo;
+  fraseTipo;
 
-  constructor (nombre, familia, edad, estado, master, gradoPelotismo) {
-    super(nombre, familia, edad, estado);
-    this.master;
-    this.gradoPelotismo;
+  constructor (nombre, familia, edad, master, gradoPelotismo) {
+    super(nombre, familia, edad);
+    this.fraseTipo = "Soy un loser";
+
+    if (master instanceof Luchador){
+      this.master = master;
+    }
+
+    if (gradoPelotismo >=0 && gradoPelotismo <= 10) {
+      this.gradoPelotismo = gradoPelotismo;
+    }
+
   }
 
-  comunicar () {
+  /*comunicar () {
     return "Soy un loser";
-  }
+  }*/
 
 }
 
