@@ -3,16 +3,25 @@ import Personaje from "./Personaje.js";
 class Luchador extends Personaje {
   arma;
   destreza;
+  fraseTipo;
 
-  constructor () {
-    super(nombre, familia, edad, estado, arma, destreza);
-    this.arma;
-    this.destreza;
+  constructor (nombre, familia, edad, arma, destreza) {
+    super(nombre, familia, edad);
+    this.arma = arma;
+    this.destreza = destreza;
+    this.fraseTipo = "Primero pego y luego pregunto";
+
+
+
+    if (destreza >=0 && destreza <= 10) {
+      this.destreza= destreza;
+    }
+
   }
 
-  comunicar () {
-    return "Primero pego y luego pregunto";
-  }
+  /*comunicar () {
+    return super.comunicar() + "primero pego y luego pregunto";
+  }*/
 
 }
 

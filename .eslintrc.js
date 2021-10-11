@@ -21,4 +21,5 @@ module.exports = {
     'class-methods-use-this': 'off',
     'import/extensions': 'off',
   },
+  parser: "@babel/eslint-parser",
 };
